@@ -19,7 +19,18 @@ We recommend you install [Homebrew](https://brew.sh) package manager on macOS.
 
 ###  Docker
 1. Run the installation command
-
+```
+brew cask install docker
+```
+2. Start Docker by opening the app
+```
+open /Applications/Docker.app
+```
+3. Confirm docker is up and running
+```
+docker version
+```
+Note: Don't enable Kubernetes in Docker
 ###  Kubernetes CLI
 1. Run the installation command
 ```
@@ -44,25 +55,17 @@ minikube start
 ```
 kubectl version
 ```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
+### Skaffold
+Skaffold is a command line tool that facilitates continuous development for Kubernetes-native applications. 
+1. Run the installation command
+```
+brew install skaffold
+```
 
 ## Contributing
 
 Please read [CONTRIBUTING.md]() for details on our code of conduct, and the process for submitting pull requests to us.
 
-## Contributors
-
-* 
-
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
